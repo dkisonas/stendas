@@ -1,0 +1,25 @@
+{
+  "name": "stendas",
+  "version": "1.0.0",
+  "description": "Stendas",
+  "main": "index.ts",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "format": "wp-scripts format",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^28.3.0",
+    "typescript": "^5.5.3"
+  }
+}

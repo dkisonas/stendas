@@ -1,13 +1,7 @@
-console.log('hello world')
+import {initializeWebcam} from "./lib/webcam";
+import {initializeWeather} from "./lib/weather";
 
-interface Person {
-    name: string
-    lastName: string
-}
-
-const person: Person = {
-    name: 'John',
-    lastName: 'Doe'
-}
-
-console.log(`hello world from ${person.name} ${person.lastName}!`)
+document.addEventListener('DOMContentLoaded', async () => {
+    await initializeWeather();
+    initializeWebcam();
+});

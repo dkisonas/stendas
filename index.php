@@ -3,9 +3,11 @@
 /**
  * Plugin Name:       Stendas
  * Description:       Pluginas
- * Version:           1.0.0
+ * Version:           2.0.0
  * Author:            Dominykas Kišonas
  */
+
+require_once plugin_dir_path(__FILE__) . 'src/inc/webcam-email-handler.php';
 
 function enqueue_stendas_plugin_scripts() {
     $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
